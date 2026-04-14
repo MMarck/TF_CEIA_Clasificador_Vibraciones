@@ -11,3 +11,4 @@ statsmodels==0.14.2
 Pillow==10.3.0
 torchvision==0.17.2
 ipykernel==6.29.4
+tensorflow==2.15
