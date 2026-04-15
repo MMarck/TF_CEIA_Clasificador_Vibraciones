@@ -2,3 +2,5 @@
 datos
 entrenamiento_de_modelos/kt_results
 libdevice.10.bc
+wandb
+tea_debug.log
