@@ -1,6 +1,7 @@
 .venv
 datos
 entrenamiento_de_modelos/kt_results
+entrenamiento_de_modelos/artefactos
 libdevice.10.bc
 wandb
 tea_debug.log
