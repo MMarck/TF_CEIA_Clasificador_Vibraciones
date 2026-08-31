@@ -1,27 +1,44 @@
-numero de parametros: 24
+numero de parametros: 36
 
-analisis de importancia: 
-* NONE
+## Seleccion de features
+* ALL
 * SHAP
 * Pearson
+* Personalizado1 (solo_tiempo)
+* Personalizado2 (solo_frecuenciales)
 
+## metrica a evaluar (optimizar)
 
-metrica a evaluar (optimizar):
-
-* val_f1_score
 * recall
+* val_f1_score
+* precision
+* accuracy
+
+## Balanceo de datos
+* SMOTE
+* Custom data aumentation
 
 
-combinaciones:
-1. NONE - val_f1_score
-2. NONE - recall
-3. SHAP - val_f1_score
-4. SHAP - recall
-5. Pearson - val_f1_score
-6. Pearson - recall
+# Combinaciones:
+en esta ocasion solo nos centraremos en la optimizacion de la métrica recall.
+
+1. ALL - RECALL - smote (no ejecutada, dado que es una combinacion con resultados conocidos)
+2. ALL - recall - Custom data aumentation (no ejecutada, dado que es una combinacion con resultados conocidos)
+3. pearson - recall - smote
+4. pearson - recall - Custom data aumentation
+5. pearson - recall - smote + Custom data aumentation
+
+6. shap - recall - smote + Custom data aumentation
+7. shap - recall - smote
+8. shap - recall - Custom data aumentation
 
 
-Nuevas combinaciones 
-* etiquetados: personalizado, Miltos90, criterio 100MLL
-* Conjunto de features: personalizado, TODOS, solo_frecuenciales, solo_tiempo, shap, Pearson
-* metricas de optimizacion: val_f1_score, recall, precision
+
+
+## Mejores RUNS
+
+LSTM_agregados_v7_2026-08-28_16-41
+CNN_Agregados_v7_2026-08-28_16-40
+RNN_agregados_v7_2026-08-28_17-22
+XGBoost_Agregados_v7_2026-08-28_16-40
+DNN_agregados_v7_2026-08-28_15-53
