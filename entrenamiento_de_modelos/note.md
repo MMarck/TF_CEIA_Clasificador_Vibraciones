@@ -37,8 +37,19 @@ en esta ocasion solo nos centraremos en la optimizacion de la métrica recall.
 
 ## Mejores RUNS
 
-LSTM_agregados_v7_2026-08-28_16-41
-CNN_Agregados_v7_2026-08-28_16-40
-RNN_agregados_v7_2026-08-28_17-22
-XGBoost_Agregados_v7_2026-08-28_16-40
-DNN_agregados_v7_2026-08-28_15-53
+- LSTM_agregados_v7_2026-08-28_16-41
+    - SMOTE + SHAP
+    - Features(3): ["mean_frequency","rms_frequency","standard_deviation"]
+- CNN_Agregados_v7_2026-08-28_16-40
+    - SMOTE + SHAP
+    - Features(3): ["mean_frequency","rms_frequency","standard_deviation"]
+- RNN_agregados_v7_2026-08-28_16-06
+    - Custom_data_aumentation + SMOTE + PEARSON
+    - Features(10): ["mean_amplitude","slope_sign_change","skewness","hoc3","hoc4","rms_frequency","envelope_rms","mean_kurtosis_trend_derivative","min_kurtosis_variance","max_kurtosis_variance"]
+- XGBoost_Agregados_v7_2026-08-28_16-40
+    - SMOTE + SHAP
+    - Features(10): ["mean_frequency","rms_frequency","standard_deviation"]
+- DNN_agregados_v7_2026-08-28_15-53
+    - Custom_data_aumentation + PEARSON
+    - Features(10): ["mean_amplitude","slope_sign_change","skewness","hoc3","hoc4","rms_frequency","envelope_rms","mean_kurtosis_trend_derivative","min_kurtosis_variance","max_kurtosis_variance"]
+
